@@ -19,7 +19,7 @@ def calculator():
             no2 = int(no2)
             if function == '*':
                 answer = no1 * no2
-                print(f'Calculated Answer: {answer}')
+                print(f'Calculated Answer: {answer:,}')
                 redo = input('Would you like to restart the program? [Y/N]')
                 while redo not in ['y', 'n']:
                     print('Please select either yes or no')
@@ -31,7 +31,7 @@ def calculator():
             if function == '/':
                 try:
                     answer = no1 / no2
-                    print(f'Calculated Answer: {answer}')
+                    print(f'Calculated Answer: {answer:,}')
                     redo = input('Would you like to restart the program? [Y/N]')
                     while redo not in ['y', 'n']:
                         print('Please select either yes or no')
@@ -46,7 +46,7 @@ def calculator():
                     restart()
             if function == '+':
                 answer = no1 + no2
-                print(f"Calculated Answer: {answer}")
+                print(f"Calculated Answer: {answer:,}")
                 redo = input('Would you like to restart the program? [Y/N]')
                 while redo not in ['y', 'n']:
                     print('Please select either yes or no')
@@ -57,7 +57,7 @@ def calculator():
                     exit()
             if function == '-':
                 answer = no1 - no2
-                print(f'Calculated Answer: {answer}')
+                print(f'Calculated Answer: {answer:,}')
                 redo = input('Would you like to restart the program? [Y/N]')
                 while redo not in ['y', 'n']:
                     print('Please select either yes or no')
