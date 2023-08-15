@@ -4,7 +4,10 @@ def calculator():
     global answer
     os.system('cls')
     print('Please Select The First Number')
-    no1 = float(input('> '))
+    try:
+        no1 = float(input('> '))
+    except FloatingPointError:
+        print('Please select a NUMBER')
     if isinstance(no1, float):
         no1 = int(no1)
         print('Please Select the function (* / + -)')
